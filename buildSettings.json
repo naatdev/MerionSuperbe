@@ -1,0 +1,15 @@
+{
+    "srcDir":"src",
+    "filesSrc":
+    [
+        "main.css",
+        "navbar.css",
+        "grid.php",
+        "buttons.css",
+        "forms.css"
+    ],
+    "buildDir":"build",
+    "custom":"src/settings.json",
+    "buildFile":"stylesheet.css",
+    "minify":"False"
+}

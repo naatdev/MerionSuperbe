@@ -10,17 +10,7 @@
 /*
 * settings of directories and files
 */
-$settings = array(
-    'srcDir' => 'src',
-    'filesSrc' => array(
-        'buttons.css', 'forms.css', 'main.css', 'navbar.css', 'grid.php'
-    ),
-    'buildDir' => 'build',
-    'custom' => 'src/settings.json',
-    'buildFile' => 'stylesheet.css',
-    'minify' => False
-);
-
+$settings = json_decode(file_get_contents("buildSettings.json"), True);
 $vars = file_get_contents($settings['custom']);
 $custom = json_decode($vars, True);
 $buildCss = "";
@@ -53,7 +43,7 @@ else{
     }
 }
 
-if($settings['minify']) {
+if($settings['minify'] == "True") {
     $buildCss = str_replace(" ", "", $buildCss);
     $buildCss = str_replace("
 ", "", $buildCss);
