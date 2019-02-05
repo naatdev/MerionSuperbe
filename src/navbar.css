@@ -1,0 +1,7 @@
+nav#topNavbar {
+    background-color: %navbar,backgroundColor%;
+    height: %navbar,lineHeight%;
+    line-height: %navbar,lineHeight%;
+    padding-left: %navbar,paddingSides%;
+    padding-right: %navbar,paddingSides%;
+}

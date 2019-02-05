@@ -1,0 +1,33 @@
+{
+    "colors":
+    {
+        "primary":"#fff",
+        "secondary":"#eee",
+        "backgroundPage":"#eee",
+        "strawberry":"rgb(205, 0, 55)",
+        "red":"rgb(213, 43, 30)",
+        "blue":"rgb(0, 136, 206)",
+        "green":"rgb(130, 190, 0)"
+    },
+    "text":
+    {
+        "defaultSize":"12px",
+        "title1":"30px",
+        "titla2":"25px"
+    },
+    "grid":
+    {
+        "nbrItems":"10"
+    },
+    "navbar":
+    {
+        "lineHeight":"50px",
+        "backgroundColor":"__%colors,strawberry%",
+        "paddingSides":"20px"
+    },
+    "buttons":
+    {
+        "borderRadius":"7px",
+        "defaultBackground":"__%colors,strawberry%"
+    }
+}

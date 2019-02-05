@@ -1,0 +1,78 @@
+button, input[type=reset], input[type=submit] {
+    border-radius: 7px;
+    background-color: rgb(205, 0, 55);
+}* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+}
+
+body {
+    background-color: #eee;
+}nav#topNavbar {
+    background-color: rgb(205, 0, 55);
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row {
+	width: 100%;
+	padding: 25px;
+	clear: both;
+}
+
+.col {
+	float: left;
+	position: relative;
+	padding: 10px;
+	min-height: 1px;
+}
+
+        .col-lg-0 {
+            width: 0px;
+        }
+    
+        .col-lg-1 {
+            width: 10px;
+        }
+    
+        .col-lg-2 {
+            width: 20px;
+        }
+    
+        .col-lg-3 {
+            width: 30px;
+        }
+    
+        .col-lg-4 {
+            width: 40px;
+        }
+    
+        .col-lg-5 {
+            width: 50px;
+        }
+    
+        .col-lg-6 {
+            width: 60px;
+        }
+    
+        .col-lg-7 {
+            width: 70px;
+        }
+    
+        .col-lg-8 {
+            width: 80px;
+        }
+    
+        .col-lg-9 {
+            width: 90px;
+        }
+    
+        .col-lg-10 {
+            width: 100px;
+        }
+    
