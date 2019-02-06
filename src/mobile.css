@@ -1,0 +1,6 @@
+@media all and (max-width: 1080px) {
+    div#pageContent {
+        left: %mobile,marginsPageContent%;
+        right: %mobile,marginsPageContent%;
+    }
+}

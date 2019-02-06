@@ -3,13 +3,14 @@ button, input[type=reset], input[type=submit] {
     background-color: %buttons,defaultBackground%;
     border: none;
     padding: %buttons,defaultPadding%;
+    margin: 5px;
     color: %buttons,defaultTextColor%;
     font-size: %buttons,defaultTextSize%;
     min-width: %buttons,minWidth%;
     transition: opacity 0.25s linear, border-radius 0.25s linear;
 }
 button:hover, input[type=reset]:hover, input[type=submit]:hover {
-    opacity: 0.85;
+    opacity: 0.9;
     border-radius: 0px;
 }
 button.danger, input[type=reset].danger, input[type=submit].danger {
@@ -17,4 +18,10 @@ button.danger, input[type=reset].danger, input[type=submit].danger {
 }
 button.info, input[type=reset].info, input[type=submit].info {
     background-color: %buttons,backgroundInfo%;
+}
+button.warning, input[type=reset].warning, input[type=submit].warning {
+    background-color: %buttons,backgroundWarning%;
+}
+button:disabled {
+    background-color: %buttons,backgroundDisabled%;
 }

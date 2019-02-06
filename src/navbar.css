@@ -1,4 +1,8 @@
-nav#topNavbar {
+.topNavbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: %navbar,backgroundColor%;
     height: %navbar,lineHeight%;
     line-height: %navbar,lineHeight%;
@@ -6,4 +10,8 @@ nav#topNavbar {
     padding-right: %navbar,paddingSides%;
     color: %navbar,textColor%;
     font-size: %navbar,textSize%;
+    z-index: 1000;
+}
+.topNavbar-fixed {
+    position: fixed;
 }

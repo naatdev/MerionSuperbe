@@ -5,6 +5,7 @@
         "main.css",
         "navbar.css",
         "grid.php",
+        "mobile.css",
         "buttons.css",
         "forms.css"
     ],

@@ -2,12 +2,14 @@
     "colors":
     {
         "primary":"#3498db",
-        "secondary":"",
+        "secondary":"rgb(60, 55, 50)",
         "lighter":"#fff",
-        "light":"#eee",
+        "light":"#f4f4f4",
+        "grey":"rgb(116, 118, 120)",
+        "yellow":"#f1c40f",
         "backgroundPage":"__%colors,light%",
         "strawberry":"rgb(205, 0, 55)",
-        "red":"rgb(213, 43, 30)",
+        "red":"#c0392b",
         "blue":"rgb(0, 136, 206)",
         "green":"rgb(130, 190, 0)"
     },
@@ -20,8 +22,9 @@
     },
     "grid":
     {
-        "nbrItems":"5",
-        "marginTopRow":"50px"
+        "nbrItems":"10",
+        "marginTopRow":"20px",
+        "marginTopCol":"15px"
     },
     "navbar":
     {
@@ -35,18 +38,31 @@
     {
         "borderRadius":"7px",
         "defaultBackground":"__%colors,green%",
-        "defaultPadding":"15px 30px 15px 30px",
+        "defaultPadding":"10px 30px 10px 30px",
         "defaultTextColor":"__%colors,lighter%",
         "defaultTextSize":"__%text,defaultSize%",
         "backgroundDanger":"__%colors,red%",
         "backgroundInfo":"__%colors,blue%",
+        "backgroundWarning":"__%colors,yellow%",
+        "backgroundDisabled":"__%colors,grey%",
         "minWidth":"100px"
     },
     "page":
     {
-        "contentBorder":"0px 60px 00px 60px",
+        "contentBorder":"10%",
         "contentPadding":"30px 50px 100px 50px",
         "defaultFont":"'Ubuntu',sans-serif,arial",
-        "backgroundContent":"#fff"
+        "backgroundContent":"#fff",
+        "backgroundPageMainP":"%colors,light%"
+    },
+    "sizes":
+    {
+        "small":"25px",
+        "medium":"35px",
+        "big":"45px"
+    },
+    "mobile":
+    {
+        "marginsPageContent":"0"
     }
 }

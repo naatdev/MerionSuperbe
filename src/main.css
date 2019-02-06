@@ -3,6 +3,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
+    word-break: keep-all;
 }
 
 html {
@@ -21,15 +22,103 @@ h1 {
 
 h2 {
     font-size: %text,title2%;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: %text,title3%;
+    font-weight: lighter;
 }
 
 div#pageContent {
+    position: absolute;
+    top: %navbar,lineHeight%;
+    left: %page,contentBorder%;
+    right: %page,contentBorder%;
     background-color: %page,backgroundContent%;
-    margin: %page,contentBorder%;
     padding: %page,contentPadding%;
     text-align: justify;
+    z-index: 500;
 }
 
 .clear {
     clear: both;
+}
+
+
+p {
+    padding: 20px 20px 40px 20px;
+    font-size: %text,defaultSize%;
+    line-height: 1.5;
+}
+
+p.main {
+    padding: 20px 40px 20px 40px;
+    font-size: %text,title3%;
+    line-height: 3;
+    border-left: 4px solid %colors,primary%;
+    background-color: %page,backgroundPageMainP%;
+}
+
+p.main span.important {
+    font-size: %text,title2%;
+}
+
+p.explain {
+    border-left: 4px solid %colors,primary%;
+    background-color: %page,backgroundPageMainP%;
+}
+
+p.info {
+    border-left: 4px solid %colors,grey%;
+    background-color: %color,light%;
+}
+
+span.important {
+    font-size: %text,title3%;
+    line-height: 4;
+}
+
+.small-margin-top {
+    margin-top: %sizes,small%;
+}
+
+.medium-margin-top {
+    margin-top: %sizes,medium%;
+}
+
+.big-margin-top {
+    margin-top: %sizes,big%;
+}
+
+a {
+    text-decoration: none;
+    color: %colors,primary%;
+    font-size: %text,defaultSize%;
+    transition: color 0.25s linear;
+    font-weight: bold;
+}
+
+a:hover {
+    color: %colors,secondary%;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.page-blank {
+    padding-top: 100%;
 }
