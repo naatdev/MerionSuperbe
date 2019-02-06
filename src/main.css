@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,4 +11,25 @@ html {
 
 body {
     background-color: %colors,backgroundPage%;
+    font-family: %page,defaultFont%;
+}
+
+h1 {
+    font-size: %text,title1%;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: %text,title2%;
+}
+
+div#pageContent {
+    background-color: %page,backgroundContent%;
+    margin: %page,contentBorder%;
+    padding: %page,contentPadding%;
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
 }

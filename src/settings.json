@@ -1,9 +1,11 @@
 {
     "colors":
     {
-        "primary":"#fff",
-        "secondary":"#eee",
-        "backgroundPage":"#eee",
+        "primary":"#3498db",
+        "secondary":"",
+        "lighter":"#fff",
+        "light":"#eee",
+        "backgroundPage":"__%colors,light%",
         "strawberry":"rgb(205, 0, 55)",
         "red":"rgb(213, 43, 30)",
         "blue":"rgb(0, 136, 206)",
@@ -11,23 +13,40 @@
     },
     "text":
     {
-        "defaultSize":"12px",
+        "defaultSize":"14px",
         "title1":"30px",
-        "titla2":"25px"
+        "title2":"25px",
+        "title3":"20px"
     },
     "grid":
     {
-        "nbrItems":"10"
+        "nbrItems":"5",
+        "marginTopRow":"50px"
     },
     "navbar":
     {
         "lineHeight":"50px",
-        "backgroundColor":"__%colors,strawberry%",
-        "paddingSides":"20px"
+        "backgroundColor":"__%colors,primary%",
+        "paddingSides":"40px",
+        "textColor":"__%colors,lighter%",
+        "textSize":"__%text,title3%"
     },
     "buttons":
     {
         "borderRadius":"7px",
-        "defaultBackground":"__%colors,strawberry%"
+        "defaultBackground":"__%colors,green%",
+        "defaultPadding":"15px 30px 15px 30px",
+        "defaultTextColor":"__%colors,lighter%",
+        "defaultTextSize":"__%text,defaultSize%",
+        "backgroundDanger":"__%colors,red%",
+        "backgroundInfo":"__%colors,blue%",
+        "minWidth":"100px"
+    },
+    "page":
+    {
+        "contentBorder":"0px 60px 00px 60px",
+        "contentPadding":"30px 50px 100px 50px",
+        "defaultFont":"'Ubuntu',sans-serif,arial",
+        "backgroundContent":"#fff"
     }
 }

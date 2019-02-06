@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,70 +11,90 @@ html {
 
 body {
     background-color: #eee;
+    font-family: 'Ubuntu',sans-serif,arial;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+div#pageContent {
+    background-color: #fff;
+    margin: 0px 60px 00px 60px;
+    padding: 30px 50px 100px 50px;
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
 }nav#topNavbar {
-    background-color: rgb(205, 0, 55);
+    background-color: #3498db;
     height: 50px;
     line-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #fff;
+    font-size: 20px;
 }
 .row {
 	width: 100%;
-	padding: 25px;
-	clear: both;
+	margin-top: 50px;
 }
 
 .col {
 	float: left;
 	position: relative;
-	padding: 10px;
+	padding: 1px 2px 1px 2px;
 	min-height: 1px;
+	overflow: hidden;
+	word-break: break-all;
 }
 
         .col-lg-0 {
-            width: 0px;
+            width: 0%;
         }
     
         .col-lg-1 {
-            width: 10px;
+            width: 20%;
         }
     
         .col-lg-2 {
-            width: 20px;
+            width: 40%;
         }
     
         .col-lg-3 {
-            width: 30px;
+            width: 60%;
         }
     
         .col-lg-4 {
-            width: 40px;
+            width: 80%;
         }
     
         .col-lg-5 {
-            width: 50px;
-        }
-    
-        .col-lg-6 {
-            width: 60px;
-        }
-    
-        .col-lg-7 {
-            width: 70px;
-        }
-    
-        .col-lg-8 {
-            width: 80px;
-        }
-    
-        .col-lg-9 {
-            width: 90px;
-        }
-    
-        .col-lg-10 {
-            width: 100px;
+            width: 100%;
         }
     button, input[type=reset], input[type=submit] {
     border-radius: 7px;
-    background-color: rgb(205, 0, 55);
+    background-color: rgb(130, 190, 0);
+    border: none;
+    padding: 15px 30px 15px 30px;
+    color: #fff;
+    font-size: 14px;
+    min-width: 100px;
+    transition: opacity 0.25s linear, border-radius 0.25s linear;
+}
+button:hover, input[type=reset]:hover, input[type=submit]:hover {
+    opacity: 0.85;
+    border-radius: 0px;
+}
+button.danger, input[type=reset].danger, input[type=submit].danger {
+    background-color: rgb(213, 43, 30);
+}
+button.info, input[type=reset].info, input[type=submit].info {
+    background-color: rgb(0, 136, 206);
 }

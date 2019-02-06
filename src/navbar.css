@@ -4,4 +4,6 @@ nav#topNavbar {
     line-height: %navbar,lineHeight%;
     padding-left: %navbar,paddingSides%;
     padding-right: %navbar,paddingSides%;
+    color: %navbar,textColor%;
+    font-size: %navbar,textSize%;
 }
