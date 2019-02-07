@@ -13,7 +13,12 @@ $return = "
 	word-break: break-all;
 	margin-top: %grid,marginTopCol%;
 }
+
+.row[role=presentation],.col[role=presentation] {
+    margin-top: 0px;
+}
 ";
+$return .= "@media all and (min-width: 1080px) {";
 for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
     $return .= "
         .col-lg-".$i." {
@@ -21,6 +26,8 @@ for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
         }
     ";
 }
+$return .= ".col-lg-none { display: none; }";
+$return .= "}";
 $return .= "@media all and (max-width: 640px) {";
 for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
     $return .= "
@@ -29,6 +36,7 @@ for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
         }
     ";
 }
+$return .= ".col-sm-none { display: none; }";
 $return .= "}";
 $return .= "@media all and (max-width: 1080px) {";
 for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
@@ -38,5 +46,6 @@ for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
         }
     ";
 }
+$return .= ".col-md-none { display: none; }";
 $return .= "}";
 return $return;

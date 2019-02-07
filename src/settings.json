@@ -64,5 +64,10 @@
     "mobile":
     {
         "marginsPageContent":"0"
+    },
+    "sidebar":
+    {
+        "widthFull":"20%",
+        "backgroundContent":"__%colors,primary%"
     }
 }

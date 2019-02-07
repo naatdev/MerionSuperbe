@@ -153,6 +153,10 @@ a:hover {
 	margin-top: 15px;
 }
 
+.row[role=presentation],.col[role=presentation] {
+    margin-top: 0px;
+}
+@media all and (min-width: 1080px) {
         .col-lg-0 {
             width: 0%;
         }
@@ -196,7 +200,7 @@ a:hover {
         .col-lg-10 {
             width: 100%;
         }
-    @media all and (max-width: 640px) {
+    .col-lg-none { display: none; }}@media all and (max-width: 640px) {
         .col-sm-0 {
             width: 0%;
         }
@@ -240,7 +244,7 @@ a:hover {
         .col-sm-10 {
             width: 100%;
         }
-    }@media all and (max-width: 1080px) {
+    .col-sm-none { display: none; }}@media all and (max-width: 1080px) {
         .col-md-0 {
             width: 0%;
         }
@@ -284,7 +288,55 @@ a:hover {
         .col-md-10 {
             width: 100%;
         }
-    }@media all and (max-width: 1080px) {
+    .col-md-none { display: none; }}div.pageSidebar {
+    position: fixed;
+    float: left;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db;
+    padding: 30px 50px 100px 50px;
+    text-align: justify;
+    z-index: 500;
+}
+div.pageSidebarContent {
+    position: relative;
+    float: right;
+    background-color: #fff;
+    min-height: 1500px;
+    padding: 15px;
+}
+
+.row[type=pageSidebarRight] div.pageSidebar {
+    float: right;
+    right: 0;
+    left: auto;
+}
+
+.row[type=pageSidebarRight] div.pageSidebarContent {
+    float: left;
+}
+
+@media all and (min-width: 1080px) {
+
+}
+
+@media all and (max-width: 1080px) {
+
+}
+
+@media all and (max-width: 640px) {
+    div.pageSidebar {
+        position: relative;
+        float: none;
+        width: 100%;
+        padding: 30px 40px 30px 40px;
+    }
+    div.pageSidebarContent {
+        float: none;
+        width: 100%;
+    }
+}@media all and (max-width: 1080px) {
     div#pageContent {
         left: 0;
         right: 0;
