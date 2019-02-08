@@ -75,6 +75,8 @@
         "borderRadius":"7px",
         "backgroundColor":"__%colors,primary%",
         "contentMarginTop":"200px",
-        "headerHeight":"450px"
+        "headerHeight":"450px",
+        "headerHeightMobile":"300px",
+        "contentMarginTopMobile":"100px"
     }
 }

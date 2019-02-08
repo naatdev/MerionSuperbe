@@ -3,4 +3,13 @@
         left: %mobile,marginsPageContent%;
         right: %mobile,marginsPageContent%;
     }
+    div#pageHeader {
+        height: %pageHeader,headerHeightMobile%;
+    }
+    
+    div#pageHeaderContent {
+        left: %pageHeader,pageHeaderMarginMobile%;
+        right: %pageHeader,pageHeaderMarginMobile%;
+        top: %pageHeader,contentMarginTopMobile%;
+    }
 }
