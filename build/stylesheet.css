@@ -403,20 +403,119 @@ button.warning, input[type=reset].warning, input[type=submit].warning {
 button:disabled {
     background-color: rgb(116, 118, 120);
 }
+ul, ol {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
 li {
     font-size: 20px;
-    line-height: 2;
+    line-height: 3;
 }
 
 ol.list-circles {
-    list-style-type: decimal;
 }
 
-ol.list-circles li:before {
+ol.list-circles .circle {
+    text-align: center;
     margin-right: 15px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
     border-radius: 50%;
-    background-color: #3498db;
+    background-color: rgb(130, 190, 0);
     color: #fff;
+    font-size: 25px;
+}.card {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.small-card {
+    width: 200px;
+    height: 250px;
+}
+
+.medium-card {
+    width: 250px;
+    height: 325px;
+}
+
+.big-card {
+    width: 325px;
+    height: 400px;
+}
+
+.card .header {
+    background-color: #3498db;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.card p {
+    text-align: center;
+    margin: 15px;
+}
+
+.small-card p {
+    margin-top: 35px;
+}
+
+.medium-card p {
+    margin-top: 35px;
+}
+
+.big-card p {
+    margin-top: 45px;
+}
+
+.card .header .illustration {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.small-card .header {
+    height: 90px;
+}
+
+.medium-card .header {
+    height: 100px;
+}
+
+.big-card .header {
+    height: 150px;
+}
+
+.small-card .header .illustration {
+    width: 70px;
+    height: 70px;
+    left: 72px;
+    top: 50px;
+}
+
+.medium-card .header .illustration {
+    width: 75px;
+    height: 75px;
+    left: 90px;
+    top: 55px;
+}
+
+.big-card .header .illustration {
+    width: 80px;
+    height: 80px;
+    left: 127px;
+    top: 100px;
 }

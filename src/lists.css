@@ -1,17 +1,26 @@
+ul, ol {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
 li {
     font-size: %text,title3%;
-    line-height: 2;
+    line-height: 3;
 }
 
 ol.list-circles {
-    list-style-type: decimal;
 }
 
-ol.list-circles li:before {
+ol.list-circles .circle {
+    text-align: center;
     margin-right: 15px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
     border-radius: 50%;
-    background-color: %colors,primary%;
+    background-color: %colors,green%;
     color: %colors,lighter%;
+    font-size: %text,title2%;
 }
