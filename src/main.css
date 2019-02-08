@@ -155,3 +155,39 @@ div#pageHeaderContent {
     border-radius: %pageHeader,borderRadius%;
     z-index: 500;
 }
+
+.chat-buble, .chat-buble-alt {
+    line-height: 2;
+    margin: 15px;
+    background-color: %colors,secondary%;
+    color: %colors,lighter%;
+    padding: 7px 21px 7px 21px;
+    position: relative;
+    border-radius: 7px;
+    text-align: left;
+}
+
+.chat-buble:before, .chat-buble-alt:after {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    content: "";
+    top: -4px;
+    left: -15px;
+    border-top: 8px solid transparent;
+    border-right: 26px solid %colors,secondary%;
+    border-bottom: 8px solid transparent;
+    transform: rotate(16deg);
+}
+
+.chat-buble-alt {
+    background-color: %colors,primary%;
+    text-align: right;
+}
+
+.chat-buble-alt:after {
+    left: auto;
+    right: -15px;
+    border-right: 26px solid %colors,primary%;
+    transform: rotate(164deg);
+}

@@ -100,7 +100,7 @@ a {
 }
 
 a:hover {
-    color: rgb(60, 55, 50);
+    color: rgb(80, 75, 70);
 }
 
 .align-center {
@@ -127,7 +127,7 @@ div#pageFooter {
     width: 100%;
     padding: 40px;
     background-color: #f1c40f;
-    border-bottom: 7px solid rgb(60, 55, 50);
+    border-bottom: 7px solid rgb(80, 75, 70);
     z-index: 500;
 }
 
@@ -154,6 +154,42 @@ div#pageHeaderContent {
     background-color: #fff;
     border-radius: 7px;
     z-index: 500;
+}
+
+.chat-buble, .chat-buble-alt {
+    line-height: 2;
+    margin: 15px;
+    background-color: rgb(80, 75, 70);
+    color: #fff;
+    padding: 7px 21px 7px 21px;
+    position: relative;
+    border-radius: 7px;
+    text-align: left;
+}
+
+.chat-buble:before, .chat-buble-alt:after {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    content: "";
+    top: -4px;
+    left: -15px;
+    border-top: 8px solid transparent;
+    border-right: 26px solid rgb(80, 75, 70);
+    border-bottom: 8px solid transparent;
+    transform: rotate(16deg);
+}
+
+.chat-buble-alt {
+    background-color: #3498db;
+    text-align: right;
+}
+
+.chat-buble-alt:after {
+    left: auto;
+    right: -15px;
+    border-right: 26px solid #3498db;
+    transform: rotate(164deg);
 }.topNavbar {
     position: absolute;
     top: 0;
@@ -448,17 +484,17 @@ ol.list-circles .circle {
 
 .small-card {
     width: 200px;
-    height: 250px;
+    min-height: 250px;
 }
 
 .medium-card {
     width: 250px;
-    height: 325px;
+    min-height: 325px;
 }
 
 .big-card {
     width: 325px;
-    height: 400px;
+    min-height: 400px;
 }
 
 .card .header {
