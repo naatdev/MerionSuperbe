@@ -156,9 +156,21 @@ div#pageHeaderContent {
     z-index: 500;
 }
 
-.chat-buble, .chat-buble-alt {
+.chat-element .chat-infos {
+    font-size: 12px;
+    color: %colors,grey%;
+    position: relative;
+    text-align: left;
+    line-height: 1;
+}
+
+.chat-element-alt .chat-infos {
+    text-align: right;
+}
+
+.chat-bubble, .chat-bubble-alt {
     line-height: 2;
-    margin: 15px;
+    margin: 0px 10px 0px 10px;
     background-color: %colors,secondary%;
     color: %colors,lighter%;
     padding: 7px 21px 7px 21px;
@@ -167,7 +179,7 @@ div#pageHeaderContent {
     text-align: left;
 }
 
-.chat-buble:before, .chat-buble-alt:after {
+.chat-bubble:before, .chat-bubble-alt:after {
     position: absolute;
     width: 0px;
     height: 0px;
@@ -180,12 +192,12 @@ div#pageHeaderContent {
     transform: rotate(16deg);
 }
 
-.chat-buble-alt {
+.chat-bubble-alt {
     background-color: %colors,primary%;
     text-align: right;
 }
 
-.chat-buble-alt:after {
+.chat-bubble-alt:after {
     left: auto;
     right: -15px;
     border-right: 26px solid %colors,primary%;

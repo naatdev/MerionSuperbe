@@ -7,11 +7,10 @@ button, input[type=reset], input[type=submit] {
     color: %buttons,defaultTextColor%;
     font-size: %buttons,defaultTextSize%;
     min-width: %buttons,minWidth%;
-    transition: opacity 0.25s linear, border-radius 0.25s linear;
+    transition: opacity 0.25s linear, border-radius 0.1s linear;
 }
 button:hover, input[type=reset]:hover, input[type=submit]:hover {
-    opacity: 0.9;
-    border-radius: 0px;
+    opacity: 0.85;
 }
 button.danger, input[type=reset].danger, input[type=submit].danger {
     background-color: %buttons,backgroundDanger%;
@@ -24,4 +23,7 @@ button.warning, input[type=reset].warning, input[type=submit].warning {
 }
 button:disabled {
     background-color: %buttons,backgroundDisabled%;
+}
+button:active, input[type=reset]:active, input[type=submit]:active {
+    border-radius: 14px;
 }
