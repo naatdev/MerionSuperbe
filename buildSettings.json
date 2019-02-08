@@ -8,7 +8,9 @@
         "sidebar.css",
         "mobile.css",
         "buttons.css",
-        "forms.css"
+        "forms.css",
+        "lists.css",
+        ""
     ],
     "buildDir":"build",
     "custom":"src/settings.json",

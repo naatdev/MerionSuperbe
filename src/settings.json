@@ -69,5 +69,12 @@
     {
         "widthFull":"20%",
         "backgroundContent":"__%colors,primary%"
+    },
+    "pageHeader":
+    {
+        "borderRadius":"7px",
+        "backgroundColor":"__%colors,primary%",
+        "contentMarginTop":"200px",
+        "headerHeight":"450px"
     }
 }

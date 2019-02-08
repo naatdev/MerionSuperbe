@@ -1,0 +1,17 @@
+li {
+    font-size: %text,title3%;
+    line-height: 2;
+}
+
+ol.list-circles {
+    list-style-type: decimal;
+}
+
+ol.list-circles li:before {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: %colors,primary%;
+    color: %colors,lighter%;
+}

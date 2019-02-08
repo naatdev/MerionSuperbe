@@ -47,7 +47,7 @@ div#pageContent {
 
 
 p {
-    padding: 20px 20px 40px 20px;
+    padding: 7px 40px 15px 40px;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -71,12 +71,12 @@ p.explain {
 
 p.info {
     border-left: 4px solid rgb(116, 118, 120);
-    background-color: %color,light%;
+    background-color: #f4f4f4;
 }
 
 span.important {
     font-size: 20px;
-    line-height: 4;
+    line-height: 3;
 }
 
 .small-margin-top {
@@ -121,6 +121,39 @@ a:hover {
 
 .page-blank {
     padding-top: 100%;
+}
+
+div#pageFooter {
+    width: 100%;
+    padding: 40px;
+    background-color: #f1c40f;
+    border-bottom: 7px solid rgb(60, 55, 50);
+    z-index: 500;
+}
+
+div#pageHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    background-color: #3498db;
+    background-position: center center;
+    background-size: cover;
+    z-index: 400;
+}
+
+div#pageHeaderContent {
+    position: absolute;
+    top: 200px;
+    width: auto;
+    left: 10%;
+    right: 10%;
+    padding: 30px 50px 100px 50px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 7px;
+    z-index: 500;
 }.topNavbar {
     position: absolute;
     top: 0;
@@ -138,6 +171,7 @@ a:hover {
 .topNavbar-fixed {
     position: fixed;
 }
+
 .row {
 	width: 100%;
 	margin-top: 20px;
@@ -341,7 +375,8 @@ div.pageSidebarContent {
         left: 0;
         right: 0;
     }
-}button, input[type=reset], input[type=submit] {
+}
+button, input[type=reset], input[type=submit] {
     border-radius: 7px;
     background-color: rgb(130, 190, 0);
     border: none;
@@ -367,4 +402,21 @@ button.warning, input[type=reset].warning, input[type=submit].warning {
 }
 button:disabled {
     background-color: rgb(116, 118, 120);
+}
+li {
+    font-size: 20px;
+    line-height: 2;
+}
+
+ol.list-circles {
+    list-style-type: decimal;
+}
+
+ol.list-circles li:before {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #fff;
 }

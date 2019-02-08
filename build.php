@@ -14,15 +14,11 @@ $settings = json_decode(file_get_contents("buildSettings.json"), True);
 $vars = file_get_contents($settings['custom']);
 $custom = json_decode($vars, True);
 $buildCss = "";
-
+print_r($custom);
 foreach($settings['filesSrc'] as $file) {
     foreach($custom as $key => $value) {
         foreach($value as $varName => $customVar) {
-            if(preg_match("#__#", $customVar)) {
-                $customVar = str_replace("__", "", $customVar);
-                $customVar = str_replace("%", "", $customVar);
-                $customVar = $custom[explode(',', $customVar)[0]][explode(',', $customVar)[1]];
-            }
+            $customVar = str_replace("__%", "%", $customVar);
             $buildCss = str_replace("%".$key.",".$varName."%", $customVar, $buildCss);
         }
     }
