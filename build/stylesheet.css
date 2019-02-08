@@ -461,7 +461,31 @@ button:disabled {
 }
 button:active, input[type=reset]:active, input[type=submit]:active {
     border-radius: 14px;
-}ul, ol {
+}input[type=text], input[type=password], input[type=email], input[type=number], textarea {
+    padding: 12px 20px 12px 20px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    margin: 10px 0px 10px 0px;
+    color: rgb(116, 118, 120);
+}
+
+.form-column * {
+    width: auto;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, textarea:focus,
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover, input[type=number]:hover, textarea:hover {
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+}​ul, ol {
     list-style-position: inside;
     list-style-type: none;
 }

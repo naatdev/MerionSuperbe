@@ -192,11 +192,34 @@
                     </div>
                     <div class="chat-element chat-element-alt">
                         <p class="chat-bubble-alt">Hi how's it going ?</p>
-                        <p class="chat-infos">12am</p>
+                        <p class="chat-infos">12am &sdot; seen</p>
                     </div>
                 </div>
-                <div class="col col-lg-3 col-md-3 col-sm-10 align-center">
-                    
+                <div class="col col-lg-3 col-md-3 col-sm-10 align-right">
+                    <span class="important">Forms column</span>
+                    <form method="POST" action="overview.html" class="form-column">
+                        <input type="text" name="name" placeholder="Your name" />
+                        <input type="password" name="key" placeholder="Your key" />
+                        <input type="submit" name="ok" value="Form submission" class="info" />
+                    </form>
+                </div>
+                <div class="col col-lg-4 col-md-4 col-sm-10 align-center">
+                    <span class="important">Other inputs</span>
+                    <form method="POST" action="overview.html" class="form-column">
+                        <textarea name="multiline-text" placeholder="Your text message here ..." cols="30" rows="5"></textarea>
+                        <label for="submit">
+                            example of label
+                            <input type="submit" name="ok" value="Submit" class="info" id="submit" />
+                        </label>
+                    </form>
+                </div>
+                <div class="col col-lg-10 col-md-10 col-sm-10 align-center">
+                    <span class="important">Forms inline</span>
+                    <form method="POST" action="overview.html" class="form-inline">
+                        <input type="text" name="name" placeholder="Your name" />
+                        <input type="password" name="key" placeholder="Your key" />
+                        <input type="submit" name="ok" value="Form submission" class="info" />
+                    </form>
                 </div>
             </div>
         <div class="clear"></div>
