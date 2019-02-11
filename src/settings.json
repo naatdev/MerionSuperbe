@@ -6,6 +6,7 @@
         "lighter":"#fff",
         "light":"#f4f4f4",
         "grey":"rgb(116, 118, 120)",
+        "lightgrey":"#EEE",
         "yellow":"#f1c40f",
         "backgroundPage":"__%colors,light%",
         "strawberry":"rgb(205, 0, 55)",

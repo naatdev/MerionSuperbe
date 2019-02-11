@@ -14,6 +14,10 @@ $return = "
 	margin-top: %grid,marginTopCol%;
 }
 
+.col-md-only, .col-sm-only {
+    display: none;
+}
+
 .row[role=presentation],.col[role=presentation] {
     margin-top: 0px;
 }
@@ -36,6 +40,7 @@ for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
         }
     ";
 }
+$return .= ".col-sm-only { display: block; }";
 $return .= ".col-sm-none { display: none; }";
 $return .= "}";
 $return .= "@media all and (max-width: 1080px) {";
@@ -46,6 +51,7 @@ for($i = 0; $i <= $custom['grid']['nbrItems']; $i++) {
         }
     ";
 }
+$return .= ".col-md-only { display: block; }";
 $return .= ".col-md-none { display: none; }";
 $return .= "}";
 return $return;

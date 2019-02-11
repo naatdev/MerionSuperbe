@@ -27,3 +27,18 @@ button:disabled {
 button:active, input[type=reset]:active, input[type=submit]:active {
     border-radius: 14px;
 }
+button.danger-inverted, input[type=reset].danger-inverted, input[type=submit].danger-inverted {
+    border: 1px solid %buttons,backgroundDanger%;
+    color: %buttons,backgroundDanger%;
+    background-color: #FFF;
+}
+button.info-inverted, input[type=reset].info-inverted, input[type=submit].info-inverted {
+    border: 1px solid %buttons,backgroundInfo%;
+    color: %buttons,backgroundInfo%;
+    background-color: #FFF;
+}
+button.warning-inverted, input[type=reset].warning-inverted, input[type=submit].warning-inverted {
+    border: 1px solid %buttons,backgroundWarning%;
+    color: %buttons,backgroundWarning%;
+    background-color: #FFF;
+}

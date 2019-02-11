@@ -24,3 +24,57 @@ ol.list-circles .circle {
     color: %colors,lighter%;
     font-size: %text,title2%;
 }
+
+.list-block {
+    border: 1px solid %colors,lightgrey%;
+}
+
+.list-block li a {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.list-block li {
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 2.5;
+    list-style-type: none;
+}
+
+.list-block li:nth-child(even) {
+    border-top: 1px solid %colors,lightgrey%;
+    border-bottom: 1px solid %colors,lightgrey%;
+}
+
+.list-block li:last-child {
+    border-bottom: none;
+}
+
+.list-block li:hover {
+    background-color: %colors,lightgrey%;
+}
+
+.list-block li.active {
+    background-color: %colors,primary%;
+}
+
+.list-block li.active a {
+    color: %colors,light%;
+    font-weight: bold;
+}
+
+.badge {
+    text-align: center;
+    margin-top: -5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 0px 10px 0px 10px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 25px;
+    border-radius: 14px;
+    background-color: %colors,grey%;
+    color: %colors,lighter%;
+    font-size: 10px;
+}

@@ -12,59 +12,56 @@
 <body>
     <nav class="topNavbar topNavbar-fixed">
         <div class="row" role="presentation">
-            <div class="col col-lg-2 col-sm-3 align-right" role="presentation">
-                <span class="sitename" onclick="OpenSidePanel();">Merion</span>
-            </div>
-            <div class="col col-lg-4 col-sm-7" role="presentation">
+            <div class="col col-lg-7 col-md-7 col-sm-6" role="presentation">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class="dropdown col-sm-none">
+                    <li><a href="#" class="sitename">Merion</a></li>
+                    <li class="col-sm-none"><a href="#" class="active">Home</a></li>
+                    <li class="col-sm-none"><a href="#">About</a></li>
+                    <li class="col-sm-none"><a href="#">Contact</a></li>
+                    <li class="dropdown col-md-none">
                         <a href="#">Dropdown &darr;</a>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </ul>
                     </li>
-                    <li class="dropdown col-sm-none">
+                    <li class="col-lg-only dropdown col-md-none">
                         <a href="#">Dropdown2 &darr;</a>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li><a href="#">Home2</a></li>
-                                <li><a href="#">About2</a></li>
-                                <li><a href="#">Contact2</a></li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <a href="#">Home2</a>
+                            <a href="#">About2</a>
+                            <a href="#">Contact2</a>
+                        </ul>
                     </li>
                 </ul>
             </div>
-            <div class="col col-lg-4 col-md-none align-right" role="presentation">
-                <form method="POST" action="overview.html" class="form-search">
-                    <input type="text" name="search" placeholder="Search for ..." />
-                    <button type="submit" name="lookfor" class="magnify-glass">&#9906;</button>
-                </form>
+            <div class="col col-lg-3 col-md-3 col-sm-5" role="presentation">
+                <ul>
+                    <li class="align-right">
+                        <a onclick="CloseSidePanel(document.getElementById('sidePanelRight'));" class="hamburger-icon">Menu &darr;</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="clear"></div>
     </nav>
 
-    <div id="sidePanel">
-        <button class="info close-panel" onclick="CloseSidePanel();">Close</button>
-        <div class="content align-center">
+    <div id="sidePanelRight">
+        <div class="content align-right">
             Hello,world!
-            <div class="card medium-card">
-                <div class="header" style="background-image:url('build/assets/keyboard2.jpg');">
-                    <div class="illustration" style="background-image:url('build/assets/author.jpg');"></div>
-                </div>
-                <p>
-                    Florian Hourdin
-                </p>
-            </div>
+            <form method="POST" action="overview.html" class="form-search small-margin-top">
+                <input type="text" name="search" placeholder="Search for ..." />
+                <button type="submit" name="lookfor" class="magnify-glass">&#9906;</button>
+            </form>
+            <ul class="list-block align-left small-margin-top">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Messages<span class="badge">2</span></a></li>
+            </ul>
         </div>
+        <button class="info-inverted close-panel" onclick="CloseSidePanel(document.getElementById('sidePanelRight'));">Close</button>
     </div>
 
     <div id="pageContent">
@@ -141,6 +138,9 @@
                 <button class="info">info</button>
                 <button class="danger">danger</button>
                 <button class="warning">warning</button><br />
+                <button class="info-inverted">info</button>
+                <button class="danger-inverted">danger</button>
+                <button class="warning-inverted">warning</button><br />
                 <button>default</button>
                 <button disabled>disabled</button>
             </div>
@@ -280,5 +280,6 @@
     <div class="clear"></div>
     <iframe src="build.php" frameborder="0" width="0" height="0"></iframe>
     <script type="text/javascript" src="main.js"></script>
+    <script>OpenSidePanel(document.getElementById('sidePanelRight'));</script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     outline: none;
     box-sizing: border-box;
     word-break: keep-all;
+    color: #333;
 }
 
 html {
@@ -208,4 +209,9 @@ div#pageHeaderContent {
 .magnify-glass {
     content: "&#9906;";
     transform: rotate(45deg);
+}
+
+.hamburger-icon::after {
+    margin-left: 15px;
+    content:'\2630';
 }

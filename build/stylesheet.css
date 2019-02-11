@@ -4,6 +4,7 @@
     outline: none;
     box-sizing: border-box;
     word-break: keep-all;
+    color: #333;
 }
 
 html {
@@ -208,6 +209,11 @@ div#pageHeaderContent {
 .magnify-glass {
     content: "&#9906;";
     transform: rotate(45deg);
+}
+
+.hamburger-icon::after {
+    margin-left: 15px;
+    content:'\2630';
 }.topNavbar {
     position: absolute;
     top: 0;
@@ -225,14 +231,14 @@ div#pageHeaderContent {
 .topNavbar-fixed {
     position: fixed;
 }
-.topNavbar span.sitename {
-    position: relative;
-    top: -2px;
-    margin-right: 15px;
+.topNavbar a.sitename {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
 }
 
 .topNavbar ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -241,10 +247,15 @@ div#pageHeaderContent {
 
 .topNavbar li {
     float: left;
-    max-width: 130px;
+    display: block;
+    position: relative;
 }
 
-.topNavbar li a {
+.topNavbar ul li.align-right {
+    float: right;
+}
+
+.topNavbar ul li a {
     display: block;
     color: #f4f4f4;
     text-align: center;
@@ -257,64 +268,23 @@ div#pageHeaderContent {
     background-color: #2980b9;
 }
 
-.topNavbar .form-search input[type=text] {
-    position: relative;
-    top: -3px;
-    padding: 10px;
-    border: none;
-    font-size: 14px;
-    width: 130px;
-    transition: width 0.25s linear;
-}
-
-.topNavbar .form-search input[type=text]:focus {
-    width: 180px;
-}
-
-.topNavbar .form-search input[type=submit], .topNavbar .form-search button {
-    position: relative;
-    top: 0;
-    left: -80px;
-    padding: 10px;
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-    padding: 0;
-    color: #3498db;
-    width: 25px;
-}
-
-.topNavbar li .dropdown-content {
+.topNavbar li.dropdown ul {
     display: none;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0px 0px 7px 7px;
-}
-
-.topNavbar li.dropdown a {
-    text-align: left;
-}
-
-.topNavbar li.dropdown a:hover, .topNavbar li.dropdown a:active {
-    background-color: %navbar,backgroundColorHoverLink%;
-}
-
-.topNavbar li.dropdown:hover > .dropdown-content, .topNavbar li.dropdown:active > .dropdown-content {
     background-color: #3498db;
+}
+
+.topNavbar ul li a {
+    white-space: nowrap;
+}
+
+.topNavbar ul li:hover > ul {
     display: block;
+    margin-top: 10px;
 }
 
-.topNavbar .dropdown-content li {
-    width: 100%;
-}
-
-.topNavbar .dropdown-content li a {
-    display: block;
-    text-align: left;
-}
-
-.topNavbar .dropdown-content li a:hover {
-    background-color: #2980b9;
+.topNavbar ul li:hover li {
+    float: none;
+    font-size: 11px;
 }
 .row {
 	width: 100%;
@@ -329,6 +299,10 @@ div#pageHeaderContent {
 	overflow: hidden;
 	word-break: break-all;
 	margin-top: 15px;
+}
+
+.col-md-only, .col-sm-only {
+    display: none;
 }
 
 .row[role=presentation],.col[role=presentation] {
@@ -422,7 +396,7 @@ div#pageHeaderContent {
         .col-sm-10 {
             width: 100%;
         }
-    .col-sm-none { display: none; }}@media all and (max-width: 1080px) {
+    .col-sm-only { display: block; }.col-sm-none { display: none; }}@media all and (max-width: 1080px) {
         .col-md-0 {
             width: 0%;
         }
@@ -466,7 +440,7 @@ div#pageHeaderContent {
         .col-md-10 {
             width: 100%;
         }
-    .col-md-none { display: none; }}div.pageSidebar {
+    .col-md-only { display: block; }.col-md-none { display: none; }}div.pageSidebar {
     position: fixed;
     float: left;
     top: 0;
@@ -518,6 +492,7 @@ div.pageSidebarContent {
     div#pageContent {
         left: 0;
         right: 0;
+        padding: 15px;
     }
     div#pageHeader {
         height: 300px;
@@ -557,6 +532,21 @@ button:disabled {
 }
 button:active, input[type=reset]:active, input[type=submit]:active {
     border-radius: 14px;
+}
+button.danger-inverted, input[type=reset].danger-inverted, input[type=submit].danger-inverted {
+    border: 1px solid #c0392b;
+    color: #c0392b;
+    background-color: #FFF;
+}
+button.info-inverted, input[type=reset].info-inverted, input[type=submit].info-inverted {
+    border: 1px solid rgb(0, 136, 206);
+    color: rgb(0, 136, 206);
+    background-color: #FFF;
+}
+button.warning-inverted, input[type=reset].warning-inverted, input[type=submit].warning-inverted {
+    border: 1px solid #f1c40f;
+    color: #f1c40f;
+    background-color: #FFF;
 }input[type=text], input[type=password], input[type=email], input[type=number], textarea {
     padding: 12px 20px 12px 20px;
     border-radius: 7px;
@@ -583,7 +573,33 @@ textarea {
 label {
     display: inline-block;
     text-align: right;
-}​ul, ol {
+}​
+
+.form-search * {
+    display: inline-block;
+}
+
+.form-search input[type=text] {
+    position: relative;
+    top: -3px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    transition: width 0.25s linear;
+}
+
+.form-search input[type=submit], .form-search button {
+    position: relative;
+    top: 0;
+    left: -80px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0;
+    color: #3498db;
+    width: 25px;
+}ul, ol {
     list-style-position: inside;
     list-style-type: none;
 }
@@ -608,6 +624,60 @@ ol.list-circles .circle {
     background-color: rgb(130, 190, 0);
     color: #fff;
     font-size: 25px;
+}
+
+.list-block {
+    border: 1px solid #EEE;
+}
+
+.list-block li a {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.list-block li {
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 2.5;
+    list-style-type: none;
+}
+
+.list-block li:nth-child(even) {
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+}
+
+.list-block li:last-child {
+    border-bottom: none;
+}
+
+.list-block li:hover {
+    background-color: #EEE;
+}
+
+.list-block li.active {
+    background-color: #3498db;
+}
+
+.list-block li.active a {
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+.badge {
+    text-align: center;
+    margin-top: -5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 0px 10px 0px 10px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 25px;
+    border-radius: 14px;
+    background-color: rgb(116, 118, 120);
+    color: #fff;
+    font-size: 10px;
 }.card {
     display: inline-block;
     margin: 15px;
@@ -727,8 +797,8 @@ ol.list-circles .circle {
 }#sidePanel {
     width: 0px;
     height: 100%;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 50px;
     left: 0;
     z-index: 1500;
     background-color: #FDFDFD;
@@ -739,13 +809,39 @@ ol.list-circles .circle {
 
 #sidePanel .close-panel {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 70px;
+    left: 20px;
 }
 
 #sidePanel .content {
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: 10px;
     right: 15px;
+}
+
+#sidePanelRight {
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: 1500;
+    background-color: #FDFDFD;
+    transition: width 0.5s linear;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#sidePanelRight .close-panel {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+}
+
+#sidePanelRight .content {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    left: 15px;
 }

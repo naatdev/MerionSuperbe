@@ -2,6 +2,7 @@
     div#pageContent {
         left: %mobile,marginsPageContent%;
         right: %mobile,marginsPageContent%;
+        padding: 15px;
     }
     div#pageHeader {
         height: %pageHeader,headerHeightMobile%;
