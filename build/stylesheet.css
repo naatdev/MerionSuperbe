@@ -203,6 +203,11 @@ div#pageHeaderContent {
     right: -15px;
     border-right: 26px solid #3498db;
     transform: rotate(164deg);
+}
+
+.magnify-glass {
+    content: "&#9906;";
+    transform: rotate(45deg);
 }.topNavbar {
     position: absolute;
     top: 0;
@@ -220,7 +225,63 @@ div#pageHeaderContent {
 .topNavbar-fixed {
     position: fixed;
 }
+.topNavbar span.sitename {
+    position: relative;
+    top: -2px;
+    margin-right: 15px;
+}
 
+.topNavbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: -2px;
+}
+
+.topNavbar li {
+    float: left;
+}
+
+.topNavbar li a {
+    display: block;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 0px 15px 0px 15px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.topNavbar li a:hover, .topNavbar li a.active {
+    background-color: #2980b9;
+}
+
+.topNavbar .form-search input[type=text] {
+    position: relative;
+    top: -3px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    width: 130px;
+    transition: width 0.25s linear;
+}
+
+.topNavbar .form-search input[type=text]:focus {
+    width: 180px;
+}
+
+.topNavbar .form-search input[type=submit], .topNavbar .form-search button {
+    position: relative;
+    top: 0;
+    left: -80px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0;
+    color: #3498db;
+    width: 25px;
+}
 .row {
 	width: 100%;
 	margin-top: 20px;

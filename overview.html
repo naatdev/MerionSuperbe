@@ -12,12 +12,25 @@
 </head>
 <body>
     <nav class="topNavbar topNavbar-fixed">
-        <span class="sitename">Merion</span>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="row" role="presentation">
+            <div class="col col-lg-2 col-sm-3 align-right" role="presentation">
+                <span class="sitename">Merion</span>
+            </div>
+            <div class="col col-lg-4 col-sm-7" role="presentation">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col col-lg-4 col-md-none align-right" role="presentation">
+                <form method="POST" action="overview.html" class="form-search">
+                    <input type="text" name="search" placeholder="Search for ..." />
+                    <button type="submit" name="lookfor" class="magnify-glass">&#9906;</button>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
     </nav>
 
     <div id="pageContent">

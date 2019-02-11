@@ -32,7 +32,8 @@
         "backgroundColor":"__%colors,primary%",
         "paddingSides":"40px",
         "textColor":"__%colors,lighter%",
-        "textSize":"__%text,title3%"
+        "textSize":"__%text,title3%",
+        "backgroundColorLinkHover":"#2980b9"
     },
     "buttons":
     {

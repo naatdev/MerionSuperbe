@@ -204,3 +204,8 @@ div#pageHeaderContent {
     border-right: 26px solid %colors,primary%;
     transform: rotate(164deg);
 }
+
+.magnify-glass {
+    content: "&#9906;";
+    transform: rotate(45deg);
+}
