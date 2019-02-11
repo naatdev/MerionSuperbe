@@ -236,7 +236,7 @@ div#pageHeaderContent {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-top: -2px;
+    margin-top: -1px;
 }
 
 .topNavbar li {
@@ -281,6 +281,39 @@ div#pageHeaderContent {
     padding: 0;
     color: #3498db;
     width: 25px;
+}
+
+.topNavbar li .dropdown-content {
+    display: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.topNavbar li.dropdown a {
+    text-align: left;
+}
+
+.topNavbar li.dropdown a:hover, .topNavbar li.dropdown a:active {
+    background-color: %navbar,backgroundColorHoverLink%;
+}
+
+.topNavbar li.dropdown:hover > .dropdown-content, .topNavbar li.dropdown:active > .dropdown-content {
+    background-color: #3498db;
+    height: auto;
+    display: block;
+}
+
+.topNavbar .dropdown-content li {
+    width: 100%;
+}
+
+.topNavbar .dropdown-content li a {
+    display: block;
+    text-align: left;
+}
+
+.topNavbar .dropdown-content li a:hover {
+    background-color: #2980b9;
 }
 .row {
 	width: 100%;
