@@ -31,7 +31,7 @@
     {
         "lineHeight":"50px",
         "backgroundColor":"__%colors,primary%",
-        "paddingSides":"40px",
+        "paddingSides":"10%",
         "textColor":"__%colors,lighter%",
         "textSize":"__%text,title3%",
         "backgroundColorLinkHover":"#2980b9"

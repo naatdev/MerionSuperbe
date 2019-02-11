@@ -25,29 +25,3 @@ label {
     display: inline-block;
     text-align: right;
 }​
-
-.form-search * {
-    display: inline-block;
-}
-
-.form-search input[type=text] {
-    position: relative;
-    top: -3px;
-    padding: 10px;
-    border: none;
-    font-size: %text,defaultSize%;
-    transition: width 0.25s linear;
-}
-
-.form-search input[type=submit], .form-search button {
-    position: relative;
-    top: 0;
-    left: -80px;
-    padding: 10px;
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-    padding: 0;
-    color: %navbar,backgroundColor%;
-    width: 25px;
-}
