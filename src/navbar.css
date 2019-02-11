@@ -31,6 +31,7 @@
 
 .topNavbar li {
     float: left;
+    max-width: 130px;
 }
 
 .topNavbar li a {
@@ -77,6 +78,7 @@
     display: none;
     position: relative;
     overflow: hidden;
+    border-radius: 0px 0px 7px 7px;
 }
 
 .topNavbar li.dropdown a {
@@ -89,7 +91,6 @@
 
 .topNavbar li.dropdown:hover > .dropdown-content, .topNavbar li.dropdown:active > .dropdown-content {
     background-color: %navbar,backgroundColor%;
-    height: auto;
     display: block;
 }
 

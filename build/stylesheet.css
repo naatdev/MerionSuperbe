@@ -241,6 +241,7 @@ div#pageHeaderContent {
 
 .topNavbar li {
     float: left;
+    max-width: 130px;
 }
 
 .topNavbar li a {
@@ -287,6 +288,7 @@ div#pageHeaderContent {
     display: none;
     position: relative;
     overflow: hidden;
+    border-radius: 0px 0px 7px 7px;
 }
 
 .topNavbar li.dropdown a {
@@ -299,7 +301,6 @@ div#pageHeaderContent {
 
 .topNavbar li.dropdown:hover > .dropdown-content, .topNavbar li.dropdown:active > .dropdown-content {
     background-color: #3498db;
-    height: auto;
     display: block;
 }
 
@@ -723,4 +724,28 @@ ol.list-circles .circle {
     height: 100px;
     left: 117px;
     top: 90px;
+}#sidePanel {
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    background-color: #FDFDFD;
+    transition: width 0.5s linear;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#sidePanel .close-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#sidePanel .content {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    right: 15px;
 }

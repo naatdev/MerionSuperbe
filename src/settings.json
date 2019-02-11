@@ -79,5 +79,9 @@
         "headerHeight":"450px",
         "headerHeightMobile":"300px",
         "contentMarginTopMobile":"100px"
+    },
+    "sidePanel":
+    {
+        "backgroundColor":"#FDFDFD"
     }
 }
