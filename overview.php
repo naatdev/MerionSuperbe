@@ -6,16 +6,16 @@
     <title>Overview MerionSuperbe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" media="screen" href="build/stylesheet.css" />
-    <!--<meta http-equiv="REFRESH" content="5" />-->
+    <link rel="stylesheet" type="text/css" media="screen" href="build/stylesheet.css?<?php echo time();  ?>" />
+    <meta http-equiv="REFRESH" content="1" />
 </head>
 <body>
     <nav class="topNavbar topNavbar-fixed">
         <div class="row" role="presentation">
-            <div class="col col-lg-7 col-md-7 col-sm-6" role="presentation">
+            <div class="col col-lg-10 col-md-10 col-sm-10" role="presentation">
                 <ul>
                     <li><a href="#" class="sitename">Merion</a></li>
-                    <li class="col-sm-none"><a href="#" class="active">Home</a></li>
+                    <li><a href="#" class="active">Home</a></li>
                     <li class="col-sm-none"><a href="#">About</a></li>
                     <li class="col-sm-none"><a href="#">Contact</a></li>
                     <li class="dropdown col-md-none">
@@ -26,7 +26,7 @@
                             <a href="#">Contact</a>
                         </ul>
                     </li>
-                    <li class="col-lg-only dropdown col-md-none">
+                    <li class="dropdown col-md-none">
                         <a href="#">Dropdown2 &darr;</a>
                         <ul>
                             <a href="#">Home2</a>
@@ -34,10 +34,6 @@
                             <a href="#">Contact2</a>
                         </ul>
                     </li>
-                </ul>
-            </div>
-            <div class="col col-lg-3 col-md-3 col-sm-5" role="presentation">
-                <ul>
                     <li class="align-right">
                         <a onclick="CloseSidePanel(document.getElementById('sidePanelRight'));" class="hamburger-icon">Menu &darr;</a>
                     </li>
@@ -280,6 +276,6 @@
     <div class="clear"></div>
     <iframe src="build.php" frameborder="0" width="0" height="0"></iframe>
     <script type="text/javascript" src="main.js"></script>
-    <script>OpenSidePanel(document.getElementById('sidePanelRight'));</script>
+    <!--<script>OpenSidePanel(document.getElementById('sidePanelRight'));</script>-->
 </body>
 </html>

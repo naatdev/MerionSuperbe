@@ -54,16 +54,19 @@
 
 .topNavbar li.dropdown ul {
     display: none;
-    background-color: %navbar,backgroundColor%;
+    background-color: %colors,secondary%;
+    margin-right: -25px;
+    margin-top: 4px;
 }
 
 .topNavbar ul li a {
     white-space: nowrap;
+    text-align: left;
 }
 
 .topNavbar ul li:hover > ul {
     display: block;
-    margin-top: 10px;
+    border-radius: 0px 0px 14px 0px;
 }
 
 .topNavbar ul li:hover li {
